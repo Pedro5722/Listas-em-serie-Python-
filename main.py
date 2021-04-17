@@ -1,4 +1,3 @@
-import random
 t = []
 r = []
 soma_t = 0.0
@@ -7,16 +6,14 @@ soma_r = 0.0
 print("==============TITULARES================")
 for i in range(1,6):
     print("Informe o salário do ",i,"º Jogador:")
-    val = round(random.uniform(10000.0, 35000.0),2)
-    print(val)
+    val = round(float(input()),2)
     t.append(val)
 print("==============RESERVAS=================")
 for i in range(1,6):
     print("Informe o salário do ",i,"º Jogador:")
-    val = round(random.uniform(1200.0, 5000.0),2)
-    print(val)
+    val = round(float(input()),2)
     r.append(val)
-
+int(input())
 for salario in t:
     soma_t += round(salario,2)
 
